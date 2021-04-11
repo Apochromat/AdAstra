@@ -3,21 +3,30 @@
     src: url(fonts/HarmoniaSansProCyr-Light.ttf); /* Путь к файлу со шрифтом */
    }
 
+
 body {
     font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
     margin: 0; /* Отступы на странице */
-    background-image: url(images/bg.png);
+    background-image: url(images/bg.jpg);
    }
 .header {
-    background-image: url(images/square.svg);
+    background-image: url(images/bg.svg);
 }
+
+.sitename a{text-decoration: none;}
 .sitename h1{
     font-size: 56px; /* Размер шрифта */
     font-family: Harmonia;
     padding: 12px;
-    line-height: 0.4;
+    line-height: 0.8;
     margin: 0; /* Убираем отступы */
     margin-left: 10px;
+    color: #fc6; /* Цвет текста */
+   }
+.sitename h3{
+    font-size: 20px; /* Размер шрифта */
+    font-family: Harmonia;
+    margin: 15% auto auto 5%;
     color: #fc6; /* Цвет текста */
    }
 h2 {
@@ -34,7 +43,7 @@ h2 {
     padding: 5px; /* Поля вокруг текста */
     margin: 10px 10px 20px 10px; /* Значения отступов */
     background-color: #fff;
-    opacity: 0.7;
+    opacity: 0.85;
    }
 #content { /* Правая колонка */
     margin: 10px 20px 20px 22.5%; /* Значения отступов */
@@ -42,16 +51,25 @@ h2 {
     border: 1px solid #333; /* Параметры рамки */
     color: rgb(0, 0, 0);
     background-color: #fff;
-    opacity: 0.7;
+    opacity: 0.85;
    }
 #footer { /* Нижний блок */
     padding: 5px; /* Поля вокруг текста */
     color: rgb(0, 0, 0); /* Цвет текста */
     clear: left; /* Отменяем действие float */
-    position:sticky;
-    bottom:0;
+    position: relative;
+    bottom:0px;
     width:99%;
     height:15px;   /* Высота блока "footer" */
     background:#5cb3df;
     opacity: 0.9;
    }
+#sidebar button{
+    font-size: 30px; /* Размер шрифта */
+    font-family: Harmonia;
+    color: azure;
+    cursor: pointer;
+    background-image: url(images/square.svg);
+    width: 100%;
+    padding: 6%
+}
