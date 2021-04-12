@@ -42,16 +42,14 @@ h2 {
     width: 20%; /* Ширина колонки */
     padding: 5px; /* Поля вокруг текста */
     margin: 10px 10px 20px 10px; /* Значения отступов */
-    background-color: #fff;
-    opacity: 0.85;
+    background: rgba(255, 255, 255, 0.85);
    }
 #content { /* Правая колонка */
     margin: 10px 20px 20px 22.5%; /* Значения отступов */
     padding: 5px; /* Поля вокруг текста */
     border: 1px solid #333; /* Параметры рамки */
     color: rgb(0, 0, 0);
-    background-color: #fff;
-    opacity: 0.85;
+    background: rgba(255, 255, 255, 0.85);
    }
 #footer { /* Нижний блок */
     padding: 5px; /* Поля вокруг текста */
@@ -61,8 +59,7 @@ h2 {
     bottom:0px;
     width:99%;
     height:15px;   /* Высота блока "footer" */
-    background:#5cb3df;
-    opacity: 0.9;
+    background: rgba(0, 170, 238, 0.9);
    }
 #sidebar button{
     font-size: 30px; /* Размер шрифта */
@@ -72,4 +69,15 @@ h2 {
     background-image: url(images/square.svg);
     width: 100%;
     padding: 6%
+}
+#emblem{
+    padding-left: 740%;
+}
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
+.rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
 }
