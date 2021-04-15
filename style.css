@@ -1,80 +1,103 @@
 @font-face {
-    font-family: Harmonia; /* Имя шрифта */
-    src: url(fonts/HarmoniaSansProCyr-Light.ttf); /* Путь к файлу со шрифтом */
-   }
-
-
-body {
-    font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
-    margin: 0; /* Отступы на странице */
-    background-image: url(images/bg.jpg);
-   }
-.header {
-    background-image: url(images/bg.svg);
+  font-family: Harmonia; /* Имя шрифта */
+  src: url(fonts/HarmoniaSansProCyr-Light.ttf); /* Путь к файлу со шрифтом */
 }
-
-.sitename a{text-decoration: none;}
-.sitename h1{
-    font-size: 56px; /* Размер шрифта */
-    font-family: Harmonia;
-    padding: 12px;
-    line-height: 0.8;
-    margin: 0; /* Убираем отступы */
-    margin-left: 10px;
-    color: #fc6; /* Цвет текста */
-   }
-.sitename h3{
-    font-size: 20px; /* Размер шрифта */
-    font-family: Harmonia;
-    margin: 15% auto auto 5%;
-    color: #fc6; /* Цвет текста */
-   }
+body {
+  font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
+  margin: 0; /* Отступы на странице */
+  background-image: url(images/bg.jpg);
+}
+.header {
+  background-image: url(images/bg.svg);
+}
+.sitename a {
+  text-decoration: none;
+}
+.sitename h1 {
+  font-size: 56px; /* Размер шрифта */
+  font-family: Harmonia;
+  padding: 12px;
+  line-height: 0.8;
+  margin: 0; /* Убираем отступы */
+  margin-left: 10px;
+  color: #fc6; /* Цвет текста */
+}
+.sitename h3 {
+  font-size: 20px; /* Размер шрифта */
+  font-family: Harmonia;
+  margin: 15% auto auto 5%;
+  color: #fc6; /* Цвет текста */
+}
 h2 {
-    margin-top: 0; /* Убираем отступ сверху */
-   }
-#header { /* Верхний блок */
-    background: #0080c0; /* Цвет фона */
-    padding: 10px; /* Поля вокруг текста */
-   }
-#sidebar { /* Левая колонка */
-    float: left; /* Обтекание справа */
-    border: 1px solid #333; /* Параметры рамки вокруг */
-    width: 20%; /* Ширина колонки */
-    padding: 5px; /* Поля вокруг текста */
-    margin: 10px 10px 20px 10px; /* Значения отступов */
-    background: rgba(255, 255, 255, 0.85);
-   }
-#content { /* Правая колонка */
-    margin: 10px 20px 20px 22.5%; /* Значения отступов */
-    padding: 5px; /* Поля вокруг текста */
-    border: 1px solid #333; /* Параметры рамки */
-    color: rgb(0, 0, 0);
-    background: rgba(255, 255, 255, 0.85);
-   }
-#footer { /* Нижний блок */
-    padding: 5px; /* Поля вокруг текста */
-    color: rgb(0, 0, 0); /* Цвет текста */
-    clear: left; /* Отменяем действие float */
-    position: relative;
-    bottom:0px;
-    width:99%;
-    height:15px;   /* Высота блока "footer" */
-    background: rgba(0, 170, 238, 0.9);
-   }
+  margin-top: 0; /* Убираем отступ сверху */
+}
+#header {
+  /* Верхний блок */
+  background: #0080c0; /* Цвет фона */
+  padding: 10px; /* Поля вокруг текста */
+}
+#sidebar {
+  /* Левая колонка */
+  float: left; /* Обтекание справа */
+  border: 1px solid #333; /* Параметры рамки вокруг */
+  width: 20%; /* Ширина колонки */
+  padding: 5px; /* Поля вокруг текста */
+  margin: 10px 10px 20px 10px; /* Значения отступов */
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+}
+#sidebar button:hover {
+    text-decoration: underline;
+}
 #sidebar button{
-    font-size: 30px; /* Размер шрифта */
-    font-family: Harmonia;
-    color: azure;
-    cursor: pointer;
-    background-image: url(images/square.svg);
-    width: 100%;
-    padding: 6%
+    border-radius: 8px;
+}
+#content {
+  /* Правая колонка */
+  margin: 10px 20px 20px 22.5%; /* Значения отступов */
+  padding: 5px; /* Поля вокруг текста */
+  border: 1px solid #333; /* Параметры рамки */
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+}
+#content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: Harmonia;
+}
+#content p {
+  font: Arial, sans-serif;
+  font-size: 16px;
+}
+#sidebar button {
+  font-size: 30px; /* Размер шрифта */
+  font-family: Harmonia;
+  color: azure;
+  cursor: pointer;
+  background-image: url(images/square.svg);
+  width: 100%;
+  padding: 6%;
 }
 .leftimg {
-    float:left; /* Выравнивание по левому краю */
-    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+  float: left; /* Выравнивание по левому краю */
+  margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
 }
-.rightimg  {
-    float: right; /* Выравнивание по правому краю  */ 
-    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+.rightimg {
+  float: right; /* Выравнивание по правому краю  */
+  margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+.map {
+  background: rgba(19, 223, 189, 0.9);
+}
+.map a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Harmonia;
+  color: rgb(0, 0, 0);
+  padding-left: 4%;
+}
+.map a:hover {
+    text-decoration: underline;
 }
