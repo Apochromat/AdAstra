@@ -2,6 +2,16 @@
   font-family: Harmonia; /* Имя шрифта */
   src: url(fonts/HarmoniaSansProCyr-Light.ttf); /* Путь к файлу со шрифтом */
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 body {
   font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
   margin: 0; /* Отступы на странице */
@@ -47,10 +57,10 @@ h2 {
   border-radius: 4px;
 }
 #sidebar button:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-#sidebar button{
-    border-radius: 8px;
+#sidebar button {
+  border-radius: 8px;
 }
 #content {
   /* Правая колонка */
@@ -99,5 +109,101 @@ h2 {
   padding-left: 4%;
 }
 .map a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* Planets animation */
+.planetPosition {
+  background-color: #2a095fbd;
+  display: flex;
+  width: 100%;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+}
+.sun {
+  position: absolute;
+  justify-self: normal;
+  width: 5%;
+  height: 10%;
+  background-image: url(images/solar_system/animation/sun.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.smallPlanet {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.planetimg {
+  width: 40%;
+  height: 40%;
+}
+
+/* Planets rotation */
+.mercury {
+  animation: spin 1s linear 0s infinite;
+}
+.venus {
+  animation: spin 2.5s linear 0s infinite;
+}
+.earth {
+  animation: spin 4s linear 0s infinite;
+}
+.mars {
+  animation: spin 6s linear 0s infinite;
+}
+.jupiter {
+  animation: spin 20s linear 0s infinite;
+}
+.saturn {
+  animation: spin 38s linear 0s infinite;
+}
+.uranus {
+  animation: spin 76s linear 0s infinite;
+}
+.neptune {
+  animation: spin 120s linear 0s infinite;
+}
+
+/* Images */
+.mercury img {
+  top: -35px;
+  position: absolute;
+}
+.venus img {
+  top: -70px;
+  position: absolute;
+}
+.earth img {
+  top: -105px;
+  position: absolute;
+}
+.mars img {
+  top: -140px;
+  position: absolute;
+}
+.jupiter img {
+  top: -175px;
+  position: absolute;
+}
+.saturn img {
+  top: -210px;
+  position: absolute;
+}
+.uranus img {
+  top: -245px;
+  position: absolute;
+}
+.neptune img {
+  top: -280px;
+  position: absolute;
+}
+
+.crown {
+  width: 100%;
+  height: 100%; 
+  background-color: #c4f02631;
+  position: absolute;
+  border-radius: 50%;
 }
