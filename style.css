@@ -200,10 +200,151 @@ h2 {
   position: absolute;
 }
 
-.crown {
+/* Справочник */
+.contentstable table {
+  background: rgba(19, 223, 189, 0.9);
   width: 100%;
-  height: 100%; 
-  background-color: #c4f02631;
+  border: solid;
+  border-collapse: collapse;
+}
+.contentstable td {
+  width: 16.6%;
+  text-align: center;
+  padding: 3px;
+  border: 1px solid black;
+}
+.contentstable a {
+  text-decoration: none;
+  font-family: Harmonia;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+.contentstable a:hover {
+  text-decoration: underline;
+}
+.defs table {
+  background: rgba(193, 167, 226, 0.9);
+  width: 100%;
+  border: solid;
+  border-collapse: collapse;
+}
+.defs td {
+  width: 80%;
+  text-align: left;
+  padding: 3px;
+  border: 1px solid black;
+}
+.defs th {
+  width: 20%;
+  text-align: center;
+  padding: 3px;
+  border: 1px solid black;
+}
+
+/* Таймлайн */
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
   position: absolute;
-  border-radius: 50%;
+  width: 2px;
+  background: #006E51;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 44%;
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #006E51;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #006E51;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left .date {
+  right: -115px;
+}
+
+.container.right .date {
+  left: -115px;
+}
+
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: rgba(148, 149, 210, 0.9);
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
 }
