@@ -97,9 +97,24 @@ h2 {
   float: right; /* Выравнивание по правому краю  */
   margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
 }
+/* Maps */
 .map {
   background: rgba(19, 223, 189, 0.9);
 }
+.map table{
+  width: 100%;
+}
+
+#map-planet td{
+  width: 11.1%;
+  text-align: center;
+}
+
+#map-people td{
+  width: 11.1%;
+  text-align: center;
+}
+
 .map a {
   font-size: 20px;
   font-weight: bold;
@@ -122,7 +137,7 @@ h2 {
   align-items: center;
 }
 .sun {
-  position: absolute;
+  position: relative;
   justify-self: normal;
   width: 5%;
   height: 10%;
@@ -142,28 +157,28 @@ h2 {
 
 /* Planets rotation */
 .mercury {
-  animation: spin 1s linear 0s infinite;
+  animation: spin 2s linear 0s infinite;
 }
 .venus {
-  animation: spin 2.5s linear 0s infinite;
+  animation: spin 5s linear 0s infinite;
 }
 .earth {
-  animation: spin 4s linear 0s infinite;
+  animation: spin 8s linear 0s infinite;
 }
 .mars {
-  animation: spin 6s linear 0s infinite;
+  animation: spin 12s linear 0s infinite;
 }
 .jupiter {
-  animation: spin 20s linear 0s infinite;
+  animation: spin 40s linear 0s infinite;
 }
 .saturn {
-  animation: spin 38s linear 0s infinite;
-}
-.uranus {
   animation: spin 76s linear 0s infinite;
 }
+.uranus {
+  animation: spin 152s linear 0s infinite;
+}
 .neptune {
-  animation: spin 120s linear 0s infinite;
+  animation: spin 240s linear 0s infinite;
 }
 
 /* Images */
@@ -347,4 +362,35 @@ h2 {
   font-size: 18px;
   font-weight: normal;
   color: #000000;
+}
+
+/* People */
+
+.people-table {
+  font-size: 20px;
+  width: 100%;
+  border: solid;
+}
+.people-table td {
+  text-align: center;
+  padding: 3px;
+  border: 1px solid black;
+}
+.people-table th {
+  text-align: center;
+  padding: 3px;
+  border: 1px solid black;
+}
+
+#people-photo{
+  width: 300px;
+}
+#people-name{
+  width: 15%;
+}
+#people-date{
+  width: 15%;
+}
+#people-info{
+  width: 40%;
 }
