@@ -85,6 +85,7 @@ h2 {
   width: 100%;
   padding: 6%;
 }
+
 .leftimg {
   float: left; /* Выравнивание по левому краю */
   margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
@@ -128,7 +129,7 @@ h2 {
 .planetPosition {
   background-color: #2a095fbd;
   display: flex;
-  width:  99.8%;
+  width:  99.5%;
   height: 650px;
   justify-content: center;
   align-items: center;
@@ -370,12 +371,16 @@ h2 {
 }
 .people-table td {
   text-align: center;
-  padding: 3px;
+  width: 25%;
+  padding: 1px;
   border: 1px solid black;
+}
+.people-table img {
+  width: 99%;
 }
 .people-table th {
   text-align: center;
-  padding: 3px;
+  padding: 1px;
   border: 1px solid black;
 }
 
